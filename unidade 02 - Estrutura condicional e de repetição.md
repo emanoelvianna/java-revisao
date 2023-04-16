@@ -33,6 +33,28 @@ if (idade < 18) {
 ````
 Você pode também concatenar expressões booleanas através dos operadores lógicos!
 
+````java
+int idade = 15;
+boolean amigoDoDono = true;
+if (idade < 18 & amigoDoDono == false) {
+  System.out.println("Não pode entrar");
+} else {
+  System.out.println("Pode entrar");
+}
+````
+
+Esse código poderia ainda ficar mais legível, utilizando-se o operador de negação, o !. Esse operador transforma uma expressão booleana de _false_ para _true_ e vice versa.
+
+````java
+int idade = 15;
+boolean amigoDoDono = true;
+if (idade < 18 & !amigoDoDono) {
+  System.out.println("Não pode entrar");
+} else {
+  System.out.println("Pode entrar");
+}
+````
+
 ### Operador if-then-else ternário
 
 Uma outra forma de declaração do condicional é a utilização do operador ternário. A estrutura de um operador ternário é compreendida da seguinte forma: ``expressão ? declaração1 : declaração2``
