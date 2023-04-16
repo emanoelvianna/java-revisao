@@ -113,4 +113,41 @@ for (int i = 0; i < 10; i = i + 1) {
 }
 ````
 
+Repare que esse for poderia ser trocado por:
+
+````java
+int i = 0;
+while (i < 10) {
+  i = i + 1;
+  System.out.println(“olá!”);
+}
+````
+
+Porém, o código do for indica claramente que a variável i serve em especial para controlar a quantidade de laços executados. Quando usar o _for_? Quando usar o _while_? Depende do gosto e da ocasião.
+
+
 # Controlando loops
+
+Apesar de termos condições booleanas nos nossos laços, em algum momento podemos decidir parar o loop por algum motivo especial, sem que o resto do laço seja executado.
+
+````java
+for (int i = x; i < y; i++) {
+  if (i % 19 == 0) {
+    System.out.println(“Achei um número divisível por 19 entre x e y”);
+    break;
+   }
+}
+````
+
+O código acima vai percorrer os números de x a y e parar quando encontrar um número divisível por 19, uma vez que foi utilizada a palavra chave _break_.
+
+Da mesma maneira, é possível obrigar o loop a executar o próximo laço. Para isso usamos a palavra chave _continue_.
+
+````java
+for (int i = 0; i < 100; i++) {
+  if(i > 50 && i < 60) {
+    continue;
+  }
+  System.out.println(i);
+}
+````
