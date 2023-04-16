@@ -61,6 +61,8 @@ public class Application {
 
 Existem quatro tipos de operadores em Java: aritméticos, bit-a-bit, relacional e lógico.
 
+### Operadores Aritméticos
+
 | Operador |                      Operação                      |     Exemplo     |   Resultado   |
 | -------- | -------------------------------------------------- | --------------- | ------------- |
 |     +    | adição                                             |    x=1+2;       |   x=3         |
@@ -75,6 +77,20 @@ Existem quatro tipos de operadores em Java: aritméticos, bit-a-bit, relacional 
 |    \*=   | Multiplica e atribui (equivale a i=i\*2)           |    i=1; i*=2;   |   i=2         |
 |    /=    | Divide e atribui (equivale a i=i/2)                |    i=2; i/=2;   |   i=1         |
 |    %=    | ódulo e atribui (equivale a i=i%2)                 |    i=1; i%=2;   |   i=1         |
+
+### Operadores Relacionais
+
+Para comparar valores são usados os seguintes operadores relacionais:
+
+| Operador |                      Operação                      |
+| -------- | -------------------------------------------------- |
+|    ==    | Igual a                                            |
+|    !=    | Diferente de                                       |
+|    >     | Maior que                                          |
+|    <     | Menor que                                          |
+|    >=    | Maior ou igual que                                 |
+|    <=    | Menor ou igual que                                 |
+
 
 
 
