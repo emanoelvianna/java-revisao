@@ -55,6 +55,15 @@ if (idade < 18 & !amigoDoDono) {
 }
 ````
 
+Para comparar se uma variável tem o mesmo valor que outra variável ou valor, utilizamos o operador ==. Repare que utilizar o operador = vai retornar um erro de compilação, já que o operador = é o de atribuição.
+
+````java
+int mes = 1;
+if (mes == 1) {
+  System.out.println(“Você deveria estar de férias”);
+}
+````
+
 ### Operador if-then-else ternário
 
 Uma outra forma de declaração do condicional é a utilização do operador ternário. A estrutura de um operador ternário é compreendida da seguinte forma: ``expressão ? declaração1 : declaração2``
