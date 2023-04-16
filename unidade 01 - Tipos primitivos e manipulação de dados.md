@@ -100,7 +100,7 @@ Os operadores lógicos operam apenas com operandos (variáveis) do tipo boolean.
 | Operador |                      Operação                      |
 | -------- | -------------------------------------------------- |
 |    &&    | AND lógico                                         |
-|    ||    | OR lógico                                          |
+|    \|\|    | OR lógico                                          |
 |    !     | Negação                                            |
 
 
