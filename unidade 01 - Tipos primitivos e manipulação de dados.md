@@ -35,7 +35,7 @@ int itres = 3;
 double dtres = itres;
 ````
 
-As conversões permitidas de forma automática pelo compilador são: byte -> short -> int -> long -> float -> double.
+As conversões permitidas de forma automática pelo compilador são: ````byte -> short -> int -> long -> float -> double````.
 
 ## Declaração e Inicialização de Valores
 
