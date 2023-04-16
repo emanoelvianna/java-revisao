@@ -46,6 +46,12 @@ As variáveis do tipo byte, short, int, long, float, double, char e boolean pode
 | _double_ pi = 3.14159;    | Declarando e inicializando pi com o valor 3.14159;        |
 | _char_ x = 'x';           | Declarando e inicializando x com o caractere 'x';         |
 
+### Escopo das variáveis
+
+O escopo da variável é o nome dado ao trecho de código em que aquela variável existe e que é possível acessá-la. 
+
+Quando abrimos um novo bloco com as chaves, as variáveis declaradas ali dentro só valem até o fim daquele bloco.
+
 ## Constantes
 
 Em Java não podem ser definidas constantes locais para um determinado método como, por exemplo, o main. Ao invés disso, pode haver somente constantes para todos os métodos na classe. Elas são chamadas usualmente de constantes de classe. As constantes são sempre definidas através dos modificadores static final. Por exemplo:
@@ -102,7 +108,7 @@ Os operadores lógicos operam apenas com operandos (variáveis) do tipo boolean.
 | Operador |                      Operação                      |
 | -------- | -------------------------------------------------- |
 |    &&    | AND lógico                                         |
-|    \|\|    | OR lógico                                          |
+|   \|\|   | OR lógico                                          |
 |    !     | Negação                                            |
 
 
