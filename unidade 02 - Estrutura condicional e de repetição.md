@@ -103,4 +103,14 @@ do {
 
 # O for
 
+Outro comando de loop extremamente utilizado é o _for_. A idéia é a mesma do _while_, fazer um trecho de código ser repetido enquanto uma condição continuar verdadeira. Mas além disso, o for isola também um espaço para inicialização de variáveis e o modificador dessas variáveis. Isso faz com que fique mais legível as variáveis que são relacionadas ao loop: ``for (inicializacao; condicao; incremento) { codigo; }``
+
+Um exemplo é o a seguir:
+
+````java
+for (int i = 0; i < 10; i = i + 1) {
+  System.out.println(“olá!”);
+}
+````
+
 # Controlando loops
