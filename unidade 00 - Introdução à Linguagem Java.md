@@ -15,9 +15,10 @@
 ## O Primeiro Programa Java
 
 ````java
+/* Meu programa Java */
 public class Application {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // da rotina main
         System.out.println("Olá mundo!");    
-    }
+    } // da class
 }
 ````
