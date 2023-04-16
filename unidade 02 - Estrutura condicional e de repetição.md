@@ -26,9 +26,9 @@ Além disso, você pode usar a cláusula _else_ para indicar o comportamento que
 ````java
 int idade = 15;
 if (idade < 18) {
-  System.out.println(“Não pode entrar”);
+  System.out.println("Não pode entrar");
 } else {
-  System.out.println(“Pode entrar”);
+  System.out.println("Pode entrar");
 }
 ````
 Você pode também concatenar expressões booleanas através dos operadores lógicos!
