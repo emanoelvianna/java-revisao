@@ -93,6 +93,14 @@ Para comparar valores são usados os seguintes operadores relacionais:
 
 Os operadores relacionais sempre retornam um valor boolean (true ou false) como resultado.
 
+### Operadores Lógicos
 
+Os operadores lógicos operam apenas com operandos (variáveis) do tipo boolean. Esses operadores servem para combinar expressões relacionais e devolvem como resultado um valor boolean (true ou false).
+
+| Operador |                      Operação                      |
+| -------- | -------------------------------------------------- |
+|    &&    | AND lógico                                         |
+|    ||    | OR lógico                                          |
+|    !     | Negação                                            |
 
 
