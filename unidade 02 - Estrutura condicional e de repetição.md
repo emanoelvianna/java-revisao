@@ -34,3 +34,13 @@ if (idade < 18) {
 Você pode também concatenar expressões booleanas através dos operadores lógicos!
 
 ### Operador if-then-else ternário
+
+Uma outra forma de declaração do condicional é a utilização do operador ternário. A estrutura de um operador ternário é compreendida da seguinte forma: ``expressão ? declaração1 : declaração2``
+
+Sua utilização faz todo o sentido quando estmaos trabalhando sobre uma operação simples que irá retornar um valor para apenas duas possibilidades. Por exemplo:
+
+````java
+double salario = 1000; 
+double bonus = salario * (salario > 1000 ? 0.10 : 0.15); 
+System.out.println(bonus);
+````
