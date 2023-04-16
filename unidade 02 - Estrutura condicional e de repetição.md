@@ -44,3 +44,9 @@ double salario = 1000;
 double bonus = salario * (salario > 1000 ? 0.10 : 0.15); 
 System.out.println(bonus);
 ````
+
+# O while
+
+### O do-while
+
+# O for
