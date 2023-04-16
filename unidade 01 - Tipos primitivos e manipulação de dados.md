@@ -35,6 +35,8 @@ As conversões permitidas de forma automática pelo compilador são: ````byte ->
 
 ## Declaração e Inicialização de Valores
 
+Em Java, toda variável tem um tipo que não pode ser mudado uma vez que declarado.
+
 As variáveis do tipo byte, short, int, long, float, double, char e boolean podem ser declaradas de acordo com uma das formas exibidas abaixo:
 
 |         Declaração        |                         Descrição                         |
