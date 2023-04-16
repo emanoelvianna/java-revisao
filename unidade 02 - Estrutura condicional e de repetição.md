@@ -78,7 +78,28 @@ System.out.println(bonus);
 
 # O while
 
+O _while_ é um comando usado para fazer um laço (_loop_), isto é, repetir um trecho de código algumas vezes. A idéia é que esse trecho de código seja repetido enquanto uma determinada condição permanecer verdadeira.
+
+````java
+int idade = 15;
+while(idade < 18) {
+  // espera ele crescer
+  idade = idade + 1;
+}
+````
+
+O trecho dentro do bloco do _while_ será executado até o momento em que a condição idade < 18 passe a ser falsa. E isso ocorrerá exatamente no momento em que idade == 18, o que fará imprimir 18.
+
 ### O do-while
+
+Às vezes, é desejável executar o corpo de um laço while pelo menos uma vez, quando se quer testar a expressão de encerramento no final do laço ao invés do início (como acontece no while). Para isso, usamos o laço do-while.
+
+````java
+int n = 5;
+do {
+  System.out.println ("tick " + n);
+} while (--n > 0);
+````
 
 # O for
 
