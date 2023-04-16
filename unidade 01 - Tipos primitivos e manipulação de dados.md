@@ -34,3 +34,22 @@ sem que seja necessário o uso de cast. Por exemplo:
 int itres = 3;
 double dtres = itres;
 ````
+
+As conversões permitidas de forma automática pelo compilador são: byte -> short -> int -> long -> float -> double.
+
+## Declaração e Inicialização de Valores
+
+As variáveis do tipo byte, short, int, long, float, double, char e boolean podem ser declaradas de acordo
+com uma das formas exibidas abaixo:
+
+|         Declaração        |                         Descrição                         |
+| ------------------------  | --------------------------------------------------------- |
+| _int_ a, b, c;            | Declarando as variáveis a, b e c.                         |
+| _int_ d = 3, e, f=5;      | Declarando d, e, f e inicializando d com 3 e f com 5.     |
+| _double_ pi = 3.14159;    | Declarando e inicializando pi com o valor 3.14159;        |
+| _char_ x = 'x';           | Declarando e inicializando x com o caractere 'x';         |
+
+
+
+
+
