@@ -61,20 +61,20 @@ public class Application {
 
 Existem quatro tipos de operadores em Java: aritméticos, bit-a-bit, relacional e lógico.
 
-| Operador |    Operação    |   Exemplo   |   Resultado   |
-| -------- | -------------- | ----------- | ------------- |
-|     +    | adição                                 | x=1+2; | x=3 |
-|     -    | subtração                              | x=3-1; | x=2 |
-|     *    | multiplicação                          | x=2\*3 | x=6 |
-|     /    | divisão                                | x=6/2; | x=3 |
-|     %    | módulo (resto da divisão inteira)      | x=7%2; | x=1 |
-|    ++    | incremento (equivale a x=x+1)          | x=1; x++; | x=2 |
-|    --    | decremento (equivale a x=x-1)              | x=1; x--; | x=0 |
-|    +=    | Soma e atribui (equivale a i=i+2)          | i=1; i+=2; | i=3 |
-|    -=    | Subtrai e atribui (equivale a i=i-2)       | i=1; i-=2; | i=-1 |
-|    \*=   | Multiplica e atribui (equivale a i=i\*2)   | i=1; i*=2; | i=2 |
-|    /=    | Divide e atribui (equivale a i=i/2) | i=2; i/=2; | i=1 |
-|    %=    | ódulo e atribui (equivale a i=i%2) | i=1; i%=2; | i=1 |
+| Operador |                      Operação                      |     Exemplo     |   Resultado   |
+| -------- | -------------------------------------------------- | --------------- | ------------- |
+|     +    | adição                                             |    x=1+2;       |   x=3         |
+|     -    | subtração                                          |    x=3-1;       |   x=2         |
+|     *    | multiplicação                                      |    x=2\*3       |   x=6         |
+|     /    | divisão                                            |    x=6/2;       |   x=3         |
+|     %    | módulo (resto da divisão inteira)                  |    x=7%2;       |   x=1         |
+|    ++    | incremento (equivale a x=x+1)                      |    x=1; x++;    |   x=2         |
+|    --    | decremento (equivale a x=x-1)                      |    x=1; x--;    |   x=0         |
+|    +=    | Soma e atribui (equivale a i=i+2)                  |    i=1; i+=2;   |   i=3         |
+|    -=    | Subtrai e atribui (equivale a i=i-2)               |    i=1; i-=2;   |   i=-1        |
+|    \*=   | Multiplica e atribui (equivale a i=i\*2)           |    i=1; i*=2;   |   i=2         |
+|    /=    | Divide e atribui (equivale a i=i/2)                |    i=2; i/=2;   |   i=1         |
+|    %=    | ódulo e atribui (equivale a i=i%2)                 |    i=1; i%=2;   |   i=1         |
 
 
 
