@@ -91,6 +91,8 @@ Para comparar valores são usados os seguintes operadores relacionais:
 |    >=    | Maior ou igual que                                 |
 |    <=    | Menor ou igual que                                 |
 
+Os operadores relacionais sempre retornam um valor boolean (true ou false) como resultado.
+
 
 
 
