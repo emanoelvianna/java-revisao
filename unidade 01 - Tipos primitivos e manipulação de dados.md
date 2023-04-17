@@ -111,7 +111,7 @@ Os operadores lógicos operam apenas com operandos (variáveis) do tipo boolean.
 |   \|\|   | OR lógico                                          |
 |    !     | Negação                                            |
 
-# Vetores Primitivos em Java
+# Vetores Primitivos
 
 Um _array_ é um grupo de variável (elementos ou componentes) que contém valores que são todos do mesmo tipo. Os _arrays_ são objetos, portanto são considerados tipos por referência. Os elementos de um _array_ podem ser de tipos primitivos ou tipos por referência. Para referenciar um elemento particular em um _array_, especificamos o nome da referência para o _array_ e o número de posição do elemento do _array_. O número de posição do elemento é chamado de índice ou subscrito do elemento.
 
@@ -125,6 +125,29 @@ Um programa pode criar vários arrays em uma única declaração. Por exemplo:
 
 ````java
 String b[] = new String[100], x[] = new String[27];
+````
+
+É possível inicializar um array com valores literais:
+
+````java
+int[] valores = {1,2,3,4,5};
+String[] nomes = {"eu","tu"};
+````
+
+# Vetores Primitivos Multidimensionais
+
+Um vetor multidimensionais é descrito como uma matriz. Enquanto um vetor tem apenas uma linha com vários valores, uma matriz pode, por exemplo, ter várias linhas com vários valores, que comumente chamamos de linhas e colunas. Para criarmos uma matriz, procedemos da mesma forma que um vetor normal, porém com mais um dimensionador (os colchetes).
+
+Então, se quisermos criar uma matriz bidimensional com 3 linha e 5 colunas, faríamos:
+
+````java
+int minhaMatriz [][] = new int [3][5];
+````
+
+Podemos inicializar uma matriz diretamente, sem a necessidade de instanciá-lo com new.
+
+````java
+int matriz[][] = {{1, 2, 7}, {3, 4, 7}, {8, 9, 7}};
 ````
 
 
