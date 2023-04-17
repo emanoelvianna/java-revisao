@@ -111,4 +111,20 @@ Os operadores lógicos operam apenas com operandos (variáveis) do tipo boolean.
 |   \|\|   | OR lógico                                          |
 |    !     | Negação                                            |
 
+# Vetores Primitivos em Java
+
+Um _array_ é um grupo de variável (elementos ou componentes) que contém valores que são todos do mesmo tipo. Os _arrays_ são objetos, portanto são considerados tipos por referência. Os elementos de um _array_ podem ser de tipos primitivos ou tipos por referência. Para referenciar um elemento particular em um _array_, especificamos o nome da referência para o _array_ e o número de posição do elemento do _array_. O número de posição do elemento é chamado de índice ou subscrito do elemento.
+
+Os objetos de _array_ ocupam espaço na memória. Os _arrays_ são criados com a palavra chave _new_. Para criar um objeto _array_ o programador especifica o tipo dos elementos do _array_ e o número de elementos como para de uma expressão de criação de _array_. Por exemplo:
+
+````java
+int v[] = new int[12];
+````
+
+Um programa pode criar vários arrays em uma única declaração. Por exemplo:
+
+````java
+String b[] = new String[100], x[] = new String[27];
+````
+
 
