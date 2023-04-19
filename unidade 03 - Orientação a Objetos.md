@@ -7,7 +7,7 @@ Objetos de software, assim como objetos do mundo real, possuem estado (variávei
 Vamos imaginar um programa para um banco, é bem fácil perceber que uma entidade extremamente importante para o nosso sistema é a conta. Nossa idéia aqui é generalizarmos alguma informação, juntamente com funcionalidades que toda conta deve ter. Pensando nisso poderiamos modelar a conta da seguinte maneira:
 
 ````java
-class Conta {
+public class Conta {
  //TODO: Definição dos métodos e atributos
 } 
 ````
@@ -23,12 +23,11 @@ Cada variável tem um nome e um tipo que define o comportamento estático do obj
 Pensando na nossa declaração da classe Conta anterior poderiamos adicionar as seguintes variáveis:
 
 ````java
-class Conta {
- static float dinheiroTotal;
- float saldo;
- String nome;
- 
- //TODO: adicionar os métodos relacionados 
+public class Conta {
+    String documento;
+    double saldo;
+    
+    //TODO: adicionar os métodos relacionados 
 } 
 ````
 
@@ -47,26 +46,23 @@ retiraValor: retira um valor especificado x da conta;
 A definição da classe Conta anteriomemnte definida com as variáveis e métodos é a seguinte:
 
 ````java
-class ContaCorrente {
- static float dinheiroTotal;
- float saldo;
- String nome;
+public class Conta {
+    String documento;
+    double saldo;
 
- float verificaSaldo ( ) {
-  return saldo;
- }
+    double getSaldo() {
+        return saldo;
+    }
 
- void depositaValor (float valor) {
-  saldo = saldo + valor;
-  dinheiroTotal += valor;
- }
+    void depositar(double valor) {
+        saldo = saldo + valor;
+    }
 
- void retiraValor (float valor) {
-  if (saldo>=valor) {
-   saldo = saldo – valor;
-   dinheiroTotal -= valor;
-  }
- }
+    void sacar(double valor) {
+        if (saldo >= valor) {
+            saldo = saldo - valor;
+        }
+    }
 }
 ````
 
@@ -82,6 +78,21 @@ class ContaCorrente {
 ## Sobrecarga de Métodos (Overloading)
 
 ## Passagem de Parâmetros em Java
+
+A passagem de parâmetros em Java é por valor e não por referência. Por exemplo, não é possível alterar o valor de um parâmetro recebido do tipo primitivo dentro de um método, pois os dados primitivos são passados por valor. Isso significa que o método não tem acesso a variável que foi usada para passar o valor. Um exemplo simples desse comportamento é apresentado no código abaixo:
+
+````java
+public static int sucessor(int numero) {
+    numero = numero + 1;
+    return numero;
+}
+
+public static void main(String[] args) {
+    int numero = 10;
+    System.out.println(sucessor(numero));
+    System.out.println(numero);
+}
+````
 
 ## Visibilidade
 
