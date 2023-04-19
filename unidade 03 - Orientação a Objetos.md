@@ -20,6 +20,43 @@ As classes descrevem as informações armazenadas e os serviços providos por um
 
 ## Métodos
 
+Os métodos definem os serviços que podem ser solicitados a uma instância (objeto), ou seja, o comportamento dinâmico de um objeto. A definição de um método em Java inclui um modificador (opcional), o tipo do dado retornado após a execução do método, o nome do método, o nome e tipo dos parâmetros e o código delimitado por chaves ( { } ).
+
+Por exemplo, na classe ContaCorrente podem ser definidos os métodos:
+
+````
+verificaSaldo: retorna o saldo da conta corrente;
+depositaValor: deposita um valor especificado x na conta;
+retiraValor: retira um valor especificado x da conta;
+````
+
+A definição da classe Conta anteriomemnte definida com as variáveis e métodos é a seguinte:
+
+````java
+class ContaCorrente {
+ static float dinheiroTotal;
+ float saldo;
+ String nome;
+
+ float verificaSaldo ( ) {
+  return saldo;
+ }
+
+ void depositaValor (float valor) {
+  saldo = saldo + valor;
+  dinheiroTotal += valor;
+ }
+
+ void retiraValor (float valor) {
+  if (saldo>=valor) {
+   saldo = saldo – valor;
+   dinheiroTotal -= valor;
+  }
+ }
+}
+````
+
+
 ### Métodos Construtores
 
 ## Instanciando uma classe
@@ -33,6 +70,8 @@ As classes descrevem as informações armazenadas e os serviços providos por um
 ## Passagem de Parâmetros em Java
 
 ## Visibilidade
+
+Em Java existem modificadores para determinar a visibilidade das variáveis e métodos. Por exemplo, uma variável ou método public pode ser acessada por outros objetos, porém se for private somente pode ser chamada dentro do próprio objeto. Um bom hábito de programação consiste em deixar privado (private) tudo aquilo que não precisa ser acessado por um método de outro objeto. Veja na tabela abaixo, os modificadores existentes em Java:
 
 |     Encapsulamento        |                                                   Visibilidade                                                          |
 | ------------------------  | ----------------------------------------------------------------------------------------------------------------------- |
