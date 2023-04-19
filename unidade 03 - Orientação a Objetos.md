@@ -130,4 +130,27 @@ Em Java existem modificadores para determinar a visibilidade das variáveis e m�
 | sem modificador           | Podem ser acessados por subclasses do mesmo pacote ou por outras classes do mesmo pacote.                               |
 | _public_                  | Podem ser acessados de qualquer classe.                                                                                 |
 
+Por exemplo, a classe Conta poderia ter os seus dados privados e os métodos públicos para que outras classes possam chamá-los. Desta maneira, os dados só podem ser acessados apenas pelo código dos métodos. Essa propriedade de proteger os dados privados com métodos públicos é chamada de **encapsulamento**.
 
+A classe Conta ficaria:
+
+````java
+public class Conta {
+    private String documento;
+    private double saldo;
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void depositar(double valor) {
+        saldo = saldo + valor;
+    }
+
+    public void sacar(double valor) {
+        if (saldo >= valor) {
+            saldo = saldo - valor;
+        }
+    }
+}
+````
