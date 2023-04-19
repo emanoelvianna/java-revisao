@@ -69,13 +69,96 @@ public class Conta {
 
 ### Métodos Construtores
 
+Quando uma classe é criada, pode ser necessário atribuir um valor inicial a algumas variáveis ou chamar um método. Isto pode ser feito através de um método construtor, o qual é automaticamente executado toda vez que a classe é instanciada.
+
+Em Java os construtores têm o mesmo nome da classe a qual são membros. O método construtor não tem tipo de retorno, isso porque o tipo implícito de retorno de um objeto construtor é a instância da própria classe.
+
+É importante lembrar que **não é obrigatório criar um construtor**. Caso não exista a declaração de um construtor, o compilador gera automaticamente um construtor default, assim como pode ser observado no exemplo anterior.
+
+Uma mesma classe pode ter vários métodos construtores, desde que eles tenham quantidade diferente de parâmetros ou parâmetros de tipos diferentes.
+
+Na classe Conta podemos definir um método construtor que recebe o documento associado ao proprietário da conta e seta o saldo em zero. A classe Conta ficaria da seguinte maneira:
+
+````java
+public class Conta {
+    String documento;
+    double saldo;
+
+    Conta(String doc) {
+        documento = doc;
+        saldo = 0;
+    }
+
+    String getDocumento() {
+        return documento;
+    }
+
+    double getSaldo() {
+        return saldo;
+    }
+
+    void depositar(double valor) {
+        saldo = saldo + valor;
+    }
+
+    void sacar(double valor) {
+        if (saldo >= valor) {
+            saldo = saldo - valor;
+        }
+    }
+}
+````
+
 ## Instanciando uma classe
+
+Em um programa Java, os objetos são criados (as classes são instanciadas) através do operador new. A execução do comando new cria um objeto de um determinado tipo (classe) e retorna uma referência a este objeto. Por exemplo:
+
+````java
+public static void main(String[] args) {
+    Conta conta = new Conta("123456");
+    System.out.println(conta.getDocumento());
+}
+````
 
 ## Operador _this_
 
+Java inclui um valor de referência especial, chamado this, que é usado dentro de qualquer método para referir-se ao objeto corrente. O valor de this refere-se ao objeto do qual o método corrente foi chamado.
+
+Em Java é permitido que variáveis locais (dentro de um método) tenham o mesmo nome de variáveis de instância. Para definir que se está acessando a variável de instância, usa-se o this. Por exemplo, a classe Conta poderia ter os seus métodos construtores declarados da seguinte maneira:
+
+````java
+public class Conta {
+    String documento;
+    double saldo;
+
+    Conta(String documento) {
+        this.documento = documento;
+        saldo = 0;
+    }
+
+    // restante do código da conta
+}
+````
+
 ## Acessando métodos e variáveis de um objeto
 
+Após criar um objeto, queremos manipular os seus dados acessando as variáveis e métodos deste objeto. Os métodos e variáveis são chamados de uma instância de outra classe através de operador ponto ( . ).
+
 ## Sobrecarga de Métodos (Overloading)
+
+É possível, em Java, e, muitas vezes, desejável criar métodos com mesmo nome, mas lista de parâmetros diferentes. Isto é chamado de sobrecarga de métodos (ou overloading) e é reconhecido em tempo de compilação. É devido a esta propriedade que podemos ter dois métodos construtores com parâmetros diferentes.
+
+````java
+Conta(String documento) {
+    this.documento = documento;
+    saldo = 0;
+}
+
+Conta(String documento, double saldo) {
+    this.documento = documento;
+    this.saldo = saldo;
+}
+````
 
 ## Passagem de Parâmetros em Java
 
