@@ -94,6 +94,31 @@ public static void main(String[] args) {
 }
 ````
 
+Quanto aos objetos, as referências aos objetos também são passadas por valor. Desta maneira, você não pode alterar a variável que referência um objeto, ou seja, não pode fazer com que a variável que referencia o objeto aponte para outro objeto. Mas, pode-se alterar o conteúdo do objeto a qual essa variável referencia, alterando o valor de um de seus atributos. Para entender melhor, veja o exemplo a seguir:
+
+````java
+public static void trocarConta(Conta conta) {
+    conta = new Conta();
+    conta.depositar(200);
+}
+
+public static void modificarSaldo(Conta conta) {
+    conta.depositar(200);
+}
+
+public static void main(String[] args) {
+    Conta conta = new Conta();
+    conta.depositar(100);
+    System.out.println(conta.getSaldo());
+
+    trocarConta(conta);
+    System.out.println(conta.getSaldo());
+
+    modificarSaldo(conta);
+    System.out.println(conta.getSaldo());
+}
+````
+
 ## Visibilidade
 
 Em Java existem modificadores para determinar a visibilidade das variáveis e métodos. Por exemplo, uma variável ou método public pode ser acessada por outros objetos, porém se for private somente pode ser chamada dentro do próprio objeto. Um bom hábito de programação consiste em deixar privado (private) tudo aquilo que não precisa ser acessado por um método de outro objeto. Veja na tabela abaixo, os modificadores existentes em Java:
