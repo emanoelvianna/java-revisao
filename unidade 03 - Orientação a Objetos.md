@@ -8,7 +8,7 @@ Vamos imaginar um programa para um banco, é bem fácil perceber que uma entidad
 
 ````java
 class Conta {
- // Definição dos métodos e atributos
+ //TODO: Definição dos métodos e atributos
 } 
 ````
 
@@ -19,6 +19,18 @@ As classes descrevem as informações armazenadas e os serviços providos por um
 ## Variáveis
 
 Cada variável tem um nome e um tipo que define o comportamento estático do objeto. Em Java para cada variável são especificados: um modificador (opcional), o nome, o tipo e o valor inicial (opcional) do atributo. Por exemplo, a classe ContaCorrente possui as variáveis saldo (saldo da conta corrente) e nome (nome do dono da conta). As variáveis de uma classe podem ser de instância ou de classe. Cada classe possui as suas próprias cópias das variáveis de instância, enquanto que as variáveis de classe são compartilhadas.
+
+Pensando na nossa declaração da classe Conta anterior poderiamos adicionar as seguintes variáveis:
+
+````java
+class Conta {
+ static float dinheiroTotal;
+ float saldo;
+ String nome;
+ 
+ //TODO: adicionar os métodos relacionados 
+} 
+````
 
 ## Métodos
 
