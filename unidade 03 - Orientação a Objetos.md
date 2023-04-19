@@ -16,7 +16,9 @@ As classes descrevem as informações armazenadas e os serviços providos por um
 
 **Em um programa orientado a objetos, um objeto é uma instância de uma classe**. Os objetos que são instâncias de uma mesma classe armazenam os mesmos tipos de informações e apresentam o mesmo comportamento.
 
-## Variáveis 
+## Variáveis
+
+Cada variável tem um nome e um tipo que define o comportamento estático do objeto. Em Java para cada variável são especificados: um modificador (opcional), o nome, o tipo e o valor inicial (opcional) do atributo. Por exemplo, a classe ContaCorrente possui as variáveis saldo (saldo da conta corrente) e nome (nome do dono da conta). As variáveis de uma classe podem ser de instância ou de classe. Cada classe possui as suas próprias cópias das variáveis de instância, enquanto que as variáveis de classe são compartilhadas.
 
 ## Métodos
 
