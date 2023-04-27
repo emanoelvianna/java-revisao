@@ -8,6 +8,8 @@ Usualmente precisamos e temos interesse em trabalhar com dados estruturados em n
 
 
 
+
+
 ## Lambda
 
 ## Optional
